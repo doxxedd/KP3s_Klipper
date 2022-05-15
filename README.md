@@ -20,6 +20,10 @@ Steps for Klipper installation:
 10) Place/update printer.cfg in the confugration section where moonraker.cfg exists 
 11) Click restart firmware on the main page
 12) Calibrate esteps https://youtu.be/T-knWbh1Gg8?t=551. Extrude filament with the nozzle at printing temperature. Do not cold extrude like in the video. Just follow his calculations 
-13) Home all axis, and in console run "probe_caliberate". Place a piece of paper under the nozzle and adjust the Z until there is slight friction when you move the paper. Save, restart
-14) Home all axis, and do a bedmesh (in Fluidd, go into tools tab and hit calibrate, after its done, save, restart firmware)
-15) All done! Happy printing
+13) Only do steps 14 and 15 if you have bltouch
+14) Home all axis, and in console run "probe_caliberate". Place a piece of paper under the nozzle and adjust the Z until there is slight friction when you move the paper. Save, restart
+15) Home all axis, and do a bedmesh (in Fluidd, go into tools tab and hit calibrate, after its done, save, restart firmware)
+16) Do step 17-18 if you do not have bltouch
+17) type "bed_adjust_screws" in console
+18) Place a piece of paper under the nozzle and adjust the Z until there is slight friction when you move the paper. Save, restart
+19) All done! Happy printing
