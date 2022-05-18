@@ -25,5 +25,8 @@ Steps for Klipper installation:
 15) Home all axis, and do a bedmesh (in Fluidd, go into tools tab and hit calibrate, after its done, save, restart firmware)
 16) Do step 17-18 if you do not have bltouch
 17) type "bed_adjust_screws" in console
-18) Place a piece of paper under the nozzle and adjust the Z until there is slight friction when you move the paper. Save, restart
-19) All done! Happy printing
+18) Place a piece of paper under the nozzle and adjust the bed screws until there is slight friction when you move the paper. Save, restart
+19) Lastly, do a pid calibrate for bed and extruder:
+20) PID_CALIBRATE HEATER=extruder TARGET=210  wait about 5 minutes then save and restart
+21) PID_CALIBRATE HEATER=heater_bed TARGET=60 wait about 10 minutes then save and restart
+22) All done! Happy printing
