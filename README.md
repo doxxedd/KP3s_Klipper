@@ -1,5 +1,9 @@
 Klipper config files for KP3s V2 (red extruder) and V3 (titan extruder)
 
+Before starting, I recommend printing the following:
+1) For bltouch mounting: https://www.thingiverse.com/thing:4816601
+2) For better cooling: https://www.thingiverse.com/thing:4820826
+
 NOTE: Robin_nano.bin file is compiled for F103 Processor. Usually found on the V2 with red extruder
 If you need a .bin file for another processor, compile one using the "Build Klipper firmware for Kingroon KP3S" section of this guide: https://3dprintbeginner.com/how-to-install-klipper-on-kingroon-kp3s/
 
@@ -21,12 +25,12 @@ Steps for Klipper installation:
 11) Click restart firmware on the main page
 12) Calibrate esteps https://youtu.be/T-knWbh1Gg8?t=551. Extrude filament with the nozzle at printing temperature. Do not cold extrude like in the video. Just follow his calculations 
 13) Only do steps 14 and 15 if you have bltouch
-14) Home all axis, and in console run "probe_caliberate". Place a piece of paper under the nozzle and adjust the Z until there is slight friction when you move the paper. Save, restart
+14) Home all axis, and in console run ```probe_caliberate``` Place a piece of paper under the nozzle and adjust the Z until there is slight friction when you move the paper. Save, restart
 15) Home all axis, and do a bedmesh (in Fluidd, go into tools tab and hit calibrate, after its done, save, restart firmware)
 16) Do step 17-18 if you do not have bltouch
-17) type "bed_adjust_screws" in console
+17) type ```bed_adjust_screws``` in console
 18) Place a piece of paper under the nozzle and adjust the bed screws until there is slight friction when you move the paper. Save, restart
 19) Lastly, do a pid calibrate for bed and extruder:
-20) PID_CALIBRATE HEATER=extruder TARGET=210  wait about 5 minutes then save and restart
-21) PID_CALIBRATE HEATER=heater_bed TARGET=60 wait about 10 minutes then save and restart
+20) ```PID_CALIBRATE HEATER=extruder TARGET=210```  wait about 5 minutes then save and restart
+21) ```PID_CALIBRATE HEATER=heater_bed TARGET=60``` wait about 10 minutes then save and restart
 22) All done! Happy printing
