@@ -4,6 +4,7 @@ Before starting, I recommend printing the following:
 1) For bltouch mounting: https://www.thingiverse.com/thing:4816601
 2) For better cooling: https://www.thingiverse.com/thing:4820826
 
+
 NOTE: Robin_nano.bin file is compiled for F103 Processor. Usually found on the V2 with red extruder
 If you need a .bin file for another processor, compile one using the "Build Klipper firmware for Kingroon KP3S" section of this guide: https://3dprintbeginner.com/how-to-install-klipper-on-kingroon-kp3s/
 
