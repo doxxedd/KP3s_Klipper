@@ -1,4 +1,4 @@
-Klipper config files for KP3s V2 (red extruder) and V3 (titan extruder)
+#Klipper config files for KP3s V2 (red extruder) and V3 (titan extruder)
 
 Before starting, I recommend printing the following:
 1) For bltouch mounting: https://www.thingiverse.com/thing:4816601
@@ -12,7 +12,7 @@ To know what processor you have, unscrew the bottom plate of the printer to get 
 Now just read what the MCU has written on it. Ex. STM32F103
 
 
-Steps for Klipper installation:
+#Steps for Klipper installation:
 1) Place Robin_nano.bin in the root of a microSD card and place in printer
 2) Turn printer on and give it 60 seconds to update. Screen will go blank, it is normal
 3) Turn printer off
